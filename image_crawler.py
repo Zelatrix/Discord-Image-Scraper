@@ -17,15 +17,6 @@ import sys
 import urllib.request
 from bs4 import BeautifulSoup
 
-"""
-For parsing URLs
-def parse_url():
-    url = sys.argv[0]
-    "https://big-sexy-pregnant-belly.tumblr.com/"
-    parseUrl = urllib.request.urlopen(url)
-    URLsoup = BeautifulSoup(parseUrl, 'html.parser')
-"""
-
 # For parsing locally stored files
 def parse_local():
     # Links must be in the form: <driveletter>/<filename.html>
@@ -44,11 +35,6 @@ def parse_local():
 
 # The main method of the program 
 def main(): 
-    """
-    if linkType == 'URL':
-        parseURL()
-    else: 
-    """
     parse_local()
 
 # To call the main function
